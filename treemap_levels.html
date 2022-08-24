@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+
+</head>
+<body>
+    <div id="eb021d8f224f4483bf8a74faae3b035b" class="chart-container" style="width:1500px; height:680px;"></div>
+    <script>
+        var chart_eb021d8f224f4483bf8a74faae3b035b = echarts.init(
+            document.getElementById('eb021d8f224f4483bf8a74faae3b035b'), 'white', {renderer: 'canvas'});
+        var option_eb021d8f224f4483bf8a74faae3b035b = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "treemap",
+            "name": "\u56fe\u8c31\u6c47\u603b",
+            "data": [
+                {
+                    "value": 40,
+                    "name": "\u5927\u6570\u636e\u5b58\u50a8",
+                    "children": [
+                        {
+                            "value": 10,
+                            "name": "Hadoop"
+                        },
+                        {
+                            "value": 10,
+                            "name": "GeoMesa"
+                        },
+                        {
+                            "value": 10,
+                            "name": "HBase"
+                        },
+                        {
+                            "value": 10,
+                            "name": "ShardingSphere"
+                        },
+                        {
+                            "value": 10,
+                            "name": "MySQL"
+                        }
+                    ]
+                },
+                {
+                    "value": 40,
+                    "name": "\u5927\u6570\u636e\u8ba1\u7b97\u4e0e\u6316\u6398",
+                    "children": [
+                        {
+                            "value": 10,
+                            "name": "Apache Spark"
+                        },
+                        {
+                            "value": 10,
+                            "name": "Machine Learning & Deep Learning"
+                        }
+                    ]
+                },
+                {
+                    "value": 40,
+                    "name": "\u5927\u6570\u636e\u53ef\u89c6\u5316",
+                    "children": [
+                        {
+                            "value": 10,
+                            "name": "cesium"
+                        },
+                        {
+                            "value": 10,
+                            "name": "openlayers"
+                        }
+                    ]
+                },
+                {
+                    "value": 40,
+                    "name": "\u6570\u636e\u6a21\u578b",
+                    "children": [
+                        {
+                            "value": 10,
+                            "name": "GeoTools"
+                        },
+                        {
+                            "value": 10,
+                            "name": "IFC"
+                        }
+                    ]
+                }
+            ],
+            "width": "80%",
+            "height": "80%",
+            "label": {
+                "show": true,
+                "position": "inside",
+                "margin": 8
+            },
+            "upperlabel": {
+                "show": true,
+                "position": "inside",
+                "margin": 8
+            },
+            "leafDepth": 1,
+            "drillDownIcon": "\u25b6",
+            "roam": false,
+            "nodeClick": "zoomToNode",
+            "zoomToNodeRatio": 0.1024,
+            "levels": [
+                {
+                    "colorMappingBy": "index",
+                    "itemStyle": {
+                        "gapWidth": 4,
+                        "borderColor": "#555",
+                        "borderWidth": 4
+                    }
+                },
+                {
+                    "colorSaturation": [
+                        0.3,
+                        0.6
+                    ],
+                    "colorMappingBy": "index",
+                    "itemStyle": {
+                        "gapWidth": 2,
+                        "borderWidth": 2,
+                        "borderColorSaturation": 0.7
+                    }
+                },
+                {
+                    "colorSaturation": [
+                        0.3,
+                        0.5
+                    ],
+                    "colorMappingBy": "index",
+                    "itemStyle": {
+                        "gapWidth": 1,
+                        "borderWidth": 0,
+                        "borderColorSaturation": 0.6
+                    }
+                },
+                {
+                    "colorSaturation": [
+                        0.3,
+                        0.5
+                    ],
+                    "colorMappingBy": "index"
+                }
+            ],
+            "colorMappingBy": "index",
+            "visibleMin": 50,
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "formatter": "{a}--{b}",
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u56fe\u8c31\u6c47\u603b"
+            ],
+            "selected": {
+                "\u56fe\u8c31\u6c47\u603b": true
+            },
+            "show": false,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "title": [
+        {
+            "text": "\u53f8\u7a7a\u5b66\u793esikongsphere \n        \u77e5\u8bc6\u56fe\u8c31",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ]
+};
+        chart_eb021d8f224f4483bf8a74faae3b035b.setOption(option_eb021d8f224f4483bf8a74faae3b035b);
+    </script>
+</body>
+</html>
